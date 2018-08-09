@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.ac.iitm.smt.blinkinterface.ActivityQwerty">
+
+
+        <!-- This is the Accumlated Text and Field -->
+        <TextView
+            android:id="@+id/accuText"
+            android:layout_width="246dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|clip_vertical|clip_horizontal"
+            android:includeFontPadding="false"
+            android:text="@string/tvAccumulatedWords"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/accuEditText"
+            android:layout_width="271dp"
+            android:layout_height="62dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/accuText"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <!-- This block is for the first 18 alphabets of English -->
+        <TextView
+            android:id="@+id/textViewK1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="27dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="@string/tvAlpha1"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accuText"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewK2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="27dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="@string/tvAlpha2"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textViewK1"
+            app:layout_constraintTop_toBottomOf="@+id/accuText"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha3"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK2"
+        app:layout_constraintTop_toBottomOf="@+id/accuText"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha4"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK3"
+        app:layout_constraintTop_toBottomOf="@+id/accuText"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textViewK7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha7"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha8"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK7"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha9"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK8"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK3"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha10"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK9"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK4"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textViewK14"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha14"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK7"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK15"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha15"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK14"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK8"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK16"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha16"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK15"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK9"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK17"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha17"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK16"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK10"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textViewK18"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha18"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK17"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK11"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha11"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK10"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK5"
+        tools:ignore="MissingConstraints" />
+
+
+        <!-- This block is for the last 8 alphabets of English and 10 digits 0-9 -->
+
+    <TextView
+        android:id="@+id/textViewK6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha6"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK5"
+        app:layout_constraintTop_toBottomOf="@+id/accuText"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK21"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha21"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK14"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK22"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha22"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK21"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK15"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textViewK23"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha23"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK22"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK16"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_green_light"
+        android:text="@string/tvAlpha12"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK11"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK6"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK26"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha26"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK25"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK19"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK13"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="82dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha13"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK12"
+        app:layout_constraintTop_toBottomOf="@+id/accuEditText"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textViewK20"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha20"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK19"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK13"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK19"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha19"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK18"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK12"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK24"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha24"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK23"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK17"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewK25"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha25"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK24"
+        app:layout_constraintTop_toBottomOf="@+id/textViewK18"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textViewK5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/tvAlpha5"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textViewK4"
+        app:layout_constraintTop_toBottomOf="@+id/accuText"
+        tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="151dp"
+            android:layout_height="39dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accuEditText"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/ivRedSignal"
+            android:layout_width="50dp"
+            android:layout_height="39dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.356"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/red_signal"
+            tools:layout_editor_absoluteY="412dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvSuggestion5"
+            android:layout_width="151dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSuggestion4" />
+
+        <TextView
+            android:id="@+id/tvSuggestion4"
+            android:layout_width="151dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSuggestion3" />
+
+        <TextView
+            android:id="@+id/tvSuggestion2"
+            android:layout_width="151dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSuggestion1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvSuggestion1"
+            android:layout_width="151dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView" />
+
+        <TextView
+            android:id="@+id/tvSuggestion3"
+            android:layout_width="151dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSuggestion2" />
+
+    <Button
+        android:id="@+id/btnBackspace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/btnBackspace"
+        android:textColor="@color/colorHighlight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSuggestion5" />
+
+
+</android.support.constraint.ConstraintLayout>

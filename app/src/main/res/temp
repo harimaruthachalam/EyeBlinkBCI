@@ -1,0 +1,89 @@
+tv = (TextView)findViewById(R.id.textViewR1);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR2);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR3);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR4);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR5);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR6);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }tv = (TextView)findViewById(R.id.textViewR7);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR8);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR9);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR10);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR11);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR12);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR13);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR14);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR15);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR16);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR17);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
+        tv = (TextView)findViewById(R.id.textViewR18);
+        if(tv.getText()!="")
+        {
+            rightAL.add(tv.getText().toString());
+        }
